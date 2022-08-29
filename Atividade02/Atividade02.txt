@@ -1,0 +1,61 @@
+1 -R - Classes são modelos que dão origem aos objetos, objetos são classes em execução
+2 - R- Atributos são características que os objetos possuem que definem o estado do objeto, por exemplo Pessoa:Nome, idade, altura, cpf. Métodos são comportamentos
+ou ações que um objeto pode realizar, por exemplo Pessoa:Comprar, vender, postar, comentar, andar, correr.
+3 - R - 
+Peso - Academia
+Tipo de CNH - Transportadora
+Tipo Sanguíneo - Hospital
+Habilidade destra - Jogo de Futebol
+Percentual de gordura - Academia
+Saldo em conta - Banco
+Etinia - Orfãnato
+4 - R - 
+a - Sim, pois o atributo pessoa seria referencia ao dono da conta
+b - Sim, para acessar todas as contas de uma pessoa.Array
+5 - R - Aluno, professor, matéria, turma, sala de aula.
+6 - R - Objeto - jogador, atributos - vida, fôlego, força, magia; métodos - andar, correr, atacar, defender, esquivar, vender, comprar.
+7 - R - 
+class Retangulo{
+	l1:number = 0
+	l2:number = 0
+
+	TestaRetangulo():number{
+		return (this.l1 + this.l2) *2
+	}
+}
+
+8 - R - 
+class Circulo{
+	raio:number = 0
+
+	CalculaArea():number{
+		return 3.14 * this.raio**2
+	}
+
+	CalculaPerimetro():number{
+		return 2 * 3.14 * this.raio
+	}
+}
+
+let circulo1:Circulo = new Circulo
+circulo1.raio = 10
+console.log(circulo1.CalculaArea())
+console.log(circulo1.CalculaPerimetro())
+9 - R - 
+class SituacaoFinanceira{
+	valorCreditos:number = 0
+	valorDebitos:number = 0
+
+	saldo():number{
+		let diferenca:number = 0
+		if(this.valorCreditos > this.valorDebitos){
+			diferenca = this.valorCreditos - this.valorDebitos
+		}
+		return diferenca
+	}
+}
+
+let situacaofinanceira1:SituacaoFinanceira = new SituacaoFinanceira
+situacaofinanceira1.valorCreditos = 600
+situacaofinanceira1.valorDebitos = 300
+console.log(situacaofinanceira1.saldo())
