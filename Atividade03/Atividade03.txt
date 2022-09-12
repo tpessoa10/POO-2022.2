@@ -1,0 +1,53 @@
+1 – R – Desconsiderar operações, ex: 
+
+let num = 10 
+let sub = 11 
+if(num > sub){ 
+    num = num - sub 
+} 
+
+Código de erro, ex: 
+
+class Num{ 
+
+    num:number = 10 
+    sub(valor:number):boolean{ 
+        if(this.num >= valor){ 
+            this.num = this.num - valor 
+            return true; 
+        }else{ 
+            return false; 
+        } 
+    } 
+} 
+
+Exibir mensagem de erro, ex: 
+
+let num = 10 
+let sub = 11 
+if(num >= sub){ 
+    num = num - sub 
+    }else{ 
+        console.log("Num menor que sub") 
+    } 
+
+2 – R – Desconsiderando a operação ficamos na incerteza do sucesso ou não da operação, exibindo uma mensagem de erro ficamos atrelados 
+a interface de texto e a mensagem poderia não ter sido notada, retornando um código de erro pode levar a mudança do tipo de retorno do método. 
+
+3 - R -
+sacar(valor: number): void {
+	if(this._saldo < valor){
+		throw Error('Saldo insuficiente')
+	}
+	this._saldo = this._saldo - valor
+}
+let conta1:Conta
+conta1 = new Conta('1',50)
+conta1.sacar(51)
+Apresenta:
+[ERR]: "Executed JavaScript Failed:" 
+[ERR]: Saldo insuficiente 
+
+4 - R - É lançada a exceção do método sacar
+
+5 -R - Sim, pois retorna a exceção do método sacar.O método transferir da classe Conta é usado no método transferir da classe Banco
