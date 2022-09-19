@@ -1,0 +1,30 @@
+1 - Tipagem estática é necessário que o programador informe de forma explícita o tipo de cada dado usado
+no sistema, tipagem dinâmica o própio programa observa qual tipo de dado está sendo declarado no código,
+defidindo a tipagem, e a sintaxe não exige que se informe explicitamente o tipo de cada dado.
+
+2 - Pole levar a mais erros de tempo de execução.
+
+3 - Em Javascript: 
+
+function soma(a, b) {
+    return a + b;
+}
+console.log(soma(10,'10'))// 1010
+
+4 - Tipagem estática porque é necessário definir os tipos de dados, e fraca pois faz operações com tipos diferentes
+
+main(){
+    int a = 10;
+    char b = "10";
+
+    printf("%d",(a+b));// 78
+}
+
+5 - Tipo any da uma maior "dinamicidade" para o Typescript, permitindo alterar para tipos diferentes em uma
+mesma variável.
+
+let var1:any = 'Hello'
+var1 = 10
+console.log(var1) // 10
+
+6 - Não, pois não aceita um dado do tipo string em uma variavel do tipo number, por exemplo.
