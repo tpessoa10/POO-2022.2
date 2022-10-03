@@ -1,0 +1,23 @@
+1 - Sim, pois a variável quantReservas não foi inicializada com this dentro do método adicionarReserva
+
+2 - class Hotel {
+    quantReservas: number;
+    
+    constructor(quantReservas:number){
+        this.quantReservas = quantReservas
+    }
+    adicionarReserva() : void {
+        this.quantReservas++;
+    }
+}
+
+let hotel : Hotel = new Hotel(2);
+console.log(hotel.quantReservas);
+
+3 - A classe Radio espera um argumento porem não é passado nenhum, pode ser passado um argumento, exemplo,
+'New Radio(1)' ou pode ser definida um valor dentro do constructor, por exemplo,'constructor(volume:number = 1)
+
+4 - a - Os três prints exibem o valor 90. C1 recebe o valor de C2 e C3 recebe o valor de C1, então eles apontam para
+o mesmo objeto.
+
+b - Será excluido da memória.
