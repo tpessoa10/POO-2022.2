@@ -1,0 +1,3 @@
+2 – R – Desconsiderando a operação ficamos na incerteza do sucesso ou não da operação,
+exibindo uma mensagem de erro ficamos atrelados a interface de texto e a mensagem poderia não ter 
+sido notada, retornando um código de erro pode levar a mudança do tipo de retorno do método. 
