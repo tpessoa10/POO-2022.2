@@ -1,2 +1,0 @@
-5 -R - Sim, pois retorna a exceção do método sacar.O método transferir da classe Conta é usado no 
-método transferir da classe Banco
